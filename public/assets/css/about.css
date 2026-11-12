@@ -1,0 +1,106 @@
+.page-stack--about {
+  gap: 3rem;
+}
+
+.about-intro-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about-json {
+  overflow-x: auto;
+  color: var(--text);
+  font-size: .875rem;
+  line-height: 1.75rem;
+}
+
+.about-story {
+  color: var(--muted);
+  line-height: 2rem;
+}
+
+.about-prompt {
+  margin-bottom: .75rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.about-journey-prompt {
+  margin-bottom: 1.5rem;
+}
+
+.about-journey-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-journey-item {
+  position: relative;
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: .375rem;
+  padding: 1rem;
+}
+
+.about-journey-date {
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.about-journey-label {
+  margin-top: .75rem;
+  color: var(--text);
+}
+
+.about-journey-index {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.about-interest-prompt {
+  margin-bottom: 1rem;
+}
+
+.about-interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+
+.about-interest {
+  border: 1px solid var(--border);
+  border-radius: .375rem;
+  padding: .375rem .75rem;
+  color: var(--text);
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .about-journey-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .about-journey-item::after {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 1rem;
+    height: 1px;
+    background: var(--success);
+    content: "";
+  }
+
+  .about-journey-item:last-child::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-intro-grid {
+    grid-template-columns: .9fr 1.1fr;
+  }
+}

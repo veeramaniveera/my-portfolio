@@ -1,0 +1,54 @@
+.page-stack--contact {
+  gap: 2.5rem;
+}
+
+.contact-prompt {
+  margin-bottom: 1.25rem;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.contact-link {
+  display: block;
+}
+
+.contact-card {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-icon {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: .375rem;
+  color: var(--accent);
+}
+
+.contact-label {
+  display: block;
+  color: var(--success);
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.contact-value {
+  display: block;
+  margin-top: .25rem;
+  color: var(--text);
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
